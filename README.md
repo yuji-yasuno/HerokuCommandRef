@@ -9,10 +9,10 @@ Salesforce1上でよく利用するHerokuコマンドをカテゴリごとに一
 
 下記スクリーンショットとなります。
 
-![スクリーンショット1](/https://dl.dropboxusercontent.com/u/37986965/HerokuRef/herokuref_1.png)
+![スクリーンショット1](https://dl.dropboxusercontent.com/u/37986965/HerokuRef/herokuref_1.png)
 
-![スクリーンショット2](/https://dl.dropboxusercontent.com/u/37986965/HerokuRef/herokuref_2.png)
+![スクリーンショット2](https://dl.dropboxusercontent.com/u/37986965/HerokuRef/herokuref_2.png)
 
-![スクリーンショット3](/https://dl.dropboxusercontent.com/u/37986965/HerokuRef/herokuref_3.png)
+![スクリーンショット3](https://dl.dropboxusercontent.com/u/37986965/HerokuRef/herokuref_3.png)
 
-![スクリーンショット4](/https://dl.dropboxusercontent.com/u/37986965/HerokuRef/herokuref_4.png)
+![スクリーンショット4](https://dl.dropboxusercontent.com/u/37986965/HerokuRef/herokuref_4.png)
