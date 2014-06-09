@@ -1,0 +1,85 @@
+{
+    "properties": [
+        {
+            "modifiers": [], 
+            "name": "records", 
+            "visibility": "PUBLIC", 
+            "references": [], 
+            "location": {
+                "column": 35, 
+                "line": 3
+            }, 
+            "type": "LIST"
+        }, 
+        {
+            "modifiers": [], 
+            "name": "selectedCategory", 
+            "visibility": "PUBLIC", 
+            "references": [], 
+            "location": {
+                "column": 19, 
+                "line": 4
+            }, 
+            "type": "String"
+        }
+    ], 
+    "methods": [
+        {
+            "modifiers": [], 
+            "name": "queryAll", 
+            "parameters": [], 
+            "visibility": "PRIVATE", 
+            "references": [], 
+            "location": {
+                "column": 36, 
+                "line": 10
+            }, 
+            "returnType": "LIST", 
+            "type": null
+        }, 
+        {
+            "modifiers": [], 
+            "name": "queryByCategory", 
+            "parameters": [], 
+            "visibility": "PUBLIC", 
+            "references": [], 
+            "location": {
+                "column": 26, 
+                "line": 14
+            }, 
+            "returnType": "PageReference", 
+            "type": null
+        }
+    ], 
+    "innerClasses": [], 
+    "variables": [], 
+    "constructors": [
+        {
+            "modifiers": [], 
+            "name": "HerokuCommandRefController", 
+            "parameters": [], 
+            "visibility": "PUBLIC", 
+            "references": [], 
+            "location": {
+                "column": 12, 
+                "line": 6
+            }, 
+            "type": null
+        }
+    ], 
+    "namespace": null, 
+    "name": "HerokuCommandRefController", 
+    "tableDeclaration": {
+        "type": "HerokuCommandRefController", 
+        "modifiers": [], 
+        "references": [], 
+        "location": {
+            "column": 27, 
+            "line": 1
+        }, 
+        "name": "HerokuCommandRefController"
+    }, 
+    "key": "01p10000000Bh39", 
+    "id": "01p10000000Bh39", 
+    "externalReferences": []
+}

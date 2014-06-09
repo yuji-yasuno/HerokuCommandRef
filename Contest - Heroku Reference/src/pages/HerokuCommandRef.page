@@ -1,0 +1,61 @@
+<apex:page showHeader="false" sidebar="false" standardStylesheets="false" controller="HerokuCommandRefController">
+    <apex:includeScript value="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"/>
+	<apex:stylesheet value="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css"/>
+    <apex:stylesheet value="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css"/>
+    <apex:outputPanel >
+        <div class="btn-group">
+          <div class="btn-group">
+            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+              カテゴリ
+              <span class="caret"></span>
+            </button>
+            <ul id="categories" class="dropdown-menu">
+              <li><a href="#">1. 基本コマンド</a></li>
+              <li><a href="#">2. アプリ作成関連</a></li>
+              <li><a href="#">3. アプリ情報関連</a></li>
+              <li><a href="#">4. アドバンス</a></li>
+            </ul>
+          </div>
+        </div>
+    </apex:outputPanel>
+    <apex:outputPanel id="results">
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>コマンド</th>
+                    <th>カテゴリ</th>
+                    <th>説明</th>
+                </tr>
+            </thead>
+            <tbody>
+                <apex:repeat value="{!records}" var="item">
+                    <tr>
+                        <td>{!item.Name}</td>
+                        <td>{!item.Category__c}</td>
+                        <td>{!item.Description__c}</td>
+                    </tr>
+                </apex:repeat>
+            </tbody>
+		</table>
+    </apex:outputPanel>
+    <div style="display: none;">
+        <apex:form >
+            <apex:actionFunction action="{!queryByCategory}" name="queryByCategory" reRender="results">
+                <apex:param assignTo="{!selectedCategory}" name="cate" value=""/>
+            </apex:actionFunction>
+        </apex:form>
+    </div>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+(function($){
+    $(document).ready(function() {
+        registerEvents();
+    });
+    function registerEvents() {
+        $(document).on('click', '#categories li a', function() {
+            queryByCategory($(this).html());
+        });
+    }
+})(jQuery);
+    </script>
+</apex:page>
